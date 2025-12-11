@@ -1,0 +1,16 @@
+[package]
+name = "zip_aegis"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "package"
+path = "scripts/build_package.rs"
+
+[dependencies]
+aegis-lang = "0.2.1"
+walkdir = "2.5.0"
+zip = "6.0.0"

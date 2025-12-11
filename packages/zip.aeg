@@ -1,0 +1,15 @@
+namespace Zip {
+    // Extrait une archive .zip dans un dossier
+    // zip_path: Chemin du fichier .zip
+    // dest_dir: Dossier de destination (créé si inexistant)
+    func extract(zip_path, dest_dir) {
+        return zip_extract(zip_path, dest_dir)
+    }
+
+    // Compresse un dossier entier dans un fichier .zip
+    // source_dir: Dossier à compresser
+    // zip_path: Chemin du fichier .zip de sortie
+    func compress(source_dir, zip_path) {
+        return zip_compress(source_dir, zip_path)
+    }
+}
